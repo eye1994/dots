@@ -16,6 +16,13 @@ return require('packer').startup(function(use)
 	})
 
 	use {
+	  'nvim-tree/nvim-tree.lua',
+	  requires = {
+	    'nvim-tree/nvim-web-devicons', -- optional
+	  },
+	}
+
+	use {
         	"folke/which-key.nvim",
   		config = function()
     			vim.o.timeout = true
