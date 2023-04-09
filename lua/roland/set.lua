@@ -4,6 +4,15 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.wo.number = true
 
+
+-- Indetation Configuration
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+
+-- Enable relative numbers
+vim.opt.relativenumber = true
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
