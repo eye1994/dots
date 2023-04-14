@@ -1,6 +1,6 @@
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "lua", "vim", "help", "javascript", "typescript", "tsx", "go", "rust", "ruby" },
+  ensure_installed = { "lua", "vim", "help", "javascript", "typescript", "tsx", "go", "rust" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -14,7 +14,6 @@ require'nvim-treesitter.configs'.setup {
 
   highlight = {
     enable = true,
-
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
     -- Using this option may slow down your editor, and you may see some duplicate highlights.
     -- Instead of true it can also be a list of languages
