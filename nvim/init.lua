@@ -103,6 +103,35 @@ require('packer').startup(function(use)
     'nvim-lualine/lualine.nvim'
   }
 
+  use {
+    "ThePrimeagen/refactoring.nvim",
+    requires = {
+      { "nvim-lua/plenary.nvim" },
+      { "nvim-treesitter/nvim-treesitter" }
+    }
+  }
+
+  use {
+    "folke/trouble.nvim",
+    requires = "nvim-tree/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {
+        -- your configuration comes here
+        -- or leave it empty to use the default settings
+        -- refer to the configuration section below
+      }
+    end
+  }
+
+  use {
+    'mbbill/undotree'
+  }
+
+  use {
+    'ThePrimeagen/vim-be-good'
+  }
+
+  use { "catppuccin/nvim", as = "catppuccin" }
 
   use {
     'dracula/vim',
